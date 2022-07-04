@@ -1,0 +1,312 @@
+@charset "UTF-8";
+body {
+  background: url(/img/BG.jpg) no-repeat center center;
+  background-size: cover;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*шапка*/
+.header__top {
+  padding: 20px 0;
+}
+
+.header__top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.header__top ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.header__top ul li a {
+  text-decoration: none;
+}
+
+.header__top ul li a :hover {
+  cursor: pointer;
+}
+
+.header__top ul li:first-child {
+  width: 40px;
+  text-indent: -9999px;
+  background: url(/img/home.svg) no-repeat center;
+}
+
+.header__hr {
+  opacity: 0.07;
+}
+
+.header__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.header__bottom span {
+  font-weight: 700;
+}
+
+.header__bottom img.icon {
+  width: 44px;
+  height: 44px;
+}
+
+.header__bottom > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.header__bottom .price {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+  -webkit-text-decoration-color: #12C868;
+          text-decoration-color: #12C868;
+  text-underline-offset: 4px;
+}
+
+.header__bottom .logo img {
+  margin-top: -32px;
+}
+
+.header__bottom .soc p {
+  position: relative;
+}
+
+.header__bottom .soc p:before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background: #12C868;
+  border-radius: 100%;
+}
+
+.header__bottom .phones .time {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.header__bottom .phones .phone {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.header__bottom .phones .dotted {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #12C868;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+  -webkit-text-decoration-color: #12C868;
+          text-decoration-color: #12C868;
+  text-underline-offset: 4px;
+}
+
+/* главный слайд */
+.main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 70px;
+}
+
+.main .main__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 225px;
+          flex: 0 1 225px;
+}
+
+.main .main__left .blocs {
+  background: url(/img/left_side.png) no-repeat center;
+  background-size: 150%;
+  -webkit-box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  padding: 100px 40px 40px 40px;
+}
+
+.main .main__left .blocs .bloc {
+  text-align: center;
+}
+
+.main .main__left .blocs .bloc span {
+  font-weight: 700;
+}
+
+.main .main__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 80%;
+          flex: 0 1 80%;
+}
+
+.main .main__right .title {
+  max-width: 660px;
+  width: 100%;
+}
+
+.main .main__right .title h1 {
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 85px;
+}
+
+.main .main__right .title h1 span {
+  font-weight: 700;
+}
+
+.main .main__right .subtitle {
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.main .main__right .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+  margin: 40px 0;
+}
+
+.main .main__right .buttons .cost__btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 335px;
+  height: 100%;
+  padding: 25px 60px;
+  position: relative;
+  background: #12C868;
+  -webkit-box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+          box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+  border-radius: 500px;
+  border: none;
+}
+
+.main .main__right .buttons .cost__btn::after {
+  content: '';
+  position: absolute;
+  top: 36px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  background: url(/img/arrow.svg);
+}
+
+.main .main__right .buttons .popup__btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #F38120;
+  width: 335px;
+  height: 100%;
+  padding: 25px 60px;
+  position: relative;
+  -webkit-box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+          box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+  border-radius: 500px;
+  border: none;
+}
+
+.main .main__right .buttons .popup__btn::after {
+  content: '';
+  position: absolute;
+  top: 36px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  background: url(/img/arrow.svg);
+}
+
+.main .main__right .gift {
+  max-width: 240px;
+  width: 100%;
+  position: relative;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.main .main__right .gift img {
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+
+.main .main__right .gift span {
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
